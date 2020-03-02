@@ -3,9 +3,7 @@
 # Music App
 >  This App will provide a music player interface to stream music and more. 
 
-  
- 
-and 
+
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)
