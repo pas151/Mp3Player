@@ -85,6 +85,6 @@ Project inspired by Jason Saldana
 
 ## Contact
 Jason Saldana -- contact@txstate.edu
-Hollie Wilson -- contact@txstate.edu
+Hollie Wilson -- hbw20@txstate.edu
 David Stevens -- contact@txstate.edu
 Paxton Scott -- pas151@txstate.edu
