@@ -1,0 +1,5 @@
+Unit Test was performed to:
+
+- ensure correct computation on time length of song
+- return of string matched expected output
+- return of int matched correct index

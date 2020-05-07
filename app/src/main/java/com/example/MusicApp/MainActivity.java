@@ -234,6 +234,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Finds index of next song
+     * @return index of next song
+     */
+    public int nextSongPosition(int index){
+        if(index < audioId.size())
+            index++;
+        else
+            index = 0;
+        return index;
+    }
+
+    /**
      * When play button is clicked it will stop or play song
      * @param view
      */
@@ -262,12 +274,7 @@ public class MainActivity extends AppCompatActivity {
      * Plays the next song in the list
      */
     public void playNext() {
-        // testCASE!== cant find next song
-        if(index < audioId.size())
-            index++;
-        else
-            index = 0;
-
+        index = nextSongPosition(index);
         mp.release();
         mp = MediaPlayer.create(this, audioId.get(index));
         totalTime = mp.getDuration();
@@ -284,6 +291,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onCompletion(MediaPlayer mp) {
                         playNext();
                     }
+
                 }
         );
     }
